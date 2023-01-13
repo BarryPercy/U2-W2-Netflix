@@ -1,0 +1,259 @@
+@font-face {
+    font-family: netflix-sans;
+    src: url("../fonts/NetflixSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: netflix-sans-bold;
+    font-weight: bold;
+    src: url("../fonts/NetflixSans-Bold.otf") format("opentype");
+}
+
+body{
+    background-color: #141414;
+    font-family: netflix-sans;
+    color:white;
+}
+nav{
+    background: rgb(6,6,6);
+    background: linear-gradient(180deg, rgba(6,6,6,1) 0%, rgba(20,20,20,1) 100%);
+    position: sticky !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+}
+
+.navbar-dark .navbar-brand{
+    color:#E50A14;
+}
+
+.netflix-logo{
+    height:2.5vw;
+    margin-left:2vw;
+}
+
+.netflix-image{
+    height:8vw;
+    border-radius: 3px;
+}
+
+.image-div:has(>.netflix-image:hover){
+    transform: scale(1.6,1.6);
+    transform-origin:0% 100%;
+    z-index: 2;
+    transition: .4s;
+}
+.netflix-carousel{
+    margin-left:3vw;
+    margin-right:0;
+    margin-bottom:2vw;
+}
+
+.no-wrap{
+    flex-wrap: nowrap;
+    overflow-wrap:normal;
+}
+
+.netflix-image, .infos-container{
+    overflow:visible;
+}
+.tv-shows{
+    margin-left:0;
+    font-weight: bold;
+    margin-left:4vw;
+}
+
+h2:first-of-type{
+    margin-bottom: 1.5vw;
+}
+
+h4:first-of-type{
+    margin-bottom: 0.8vw;
+    font-weight: bold;
+}
+
+.infos-container h6:first-child {
+    color: #8197a4;
+}
+
+.infos-container p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: #f2f4f6;
+    display: block;
+    display: -webkit-box;
+    font-size: 13px;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.infos-container {
+    margin-top:0;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    background-color: #181818;
+    width:100%;
+    z-index: 2; 
+    opacity: 1;
+    top:100%;
+    opacity: 0;
+    transition: opacity 0.1s, transform 0.5s;
+}
+
+.netflix-image:hover + .infos-container {
+    opacity: 1;
+}
+
+.image-div{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom:.5vw;
+    margin-left:1vw;
+    margin-right:.5vw;
+}
+
+.icons{
+    filter: brightness(0) invert(1);
+}
+
+.dropdown{
+    height:10px;
+    transform: translate(3px, 3px);
+
+}
+
+.match-green{
+    color: #4cb862 !important;
+    font-weight:bold;
+}
+
+.age-rating{
+    height:17px;
+}
+
+.info-row{
+    margin-top:1vw;
+    font-size: 10px !important;
+}
+
+.slightly-up{
+    transform: translatey(-2px);
+}
+
+.icon-row{
+    margin-top:1vw;
+}
+
+.genre{
+    margin-bottom:1vw;
+    font-size: 10px !important;
+}
+
+.grey-dot{
+    color:grey;
+}
+
+.container-fluid{
+    width:auto;
+}
+
+.footer-columns{
+    display:flex;
+    color:grey;
+    font-size:small;
+    font-weight:bold;
+}
+
+.service-code{
+    color:grey;
+    font-size:small;
+    font-weight:bold;
+    border: 1px solid grey;
+    padding:4px;
+}
+
+.copyright-footer{
+    color:grey;
+    font-size:x-small;
+    font-weight:bold;
+    margin-bottom:1vw;
+}
+
+.grey-icon{
+    filter: grayscale(1);
+    height:30px;
+    margin-right:1vw;
+}
+
+.grey-icons{
+    margin-bottom:1vw;
+}
+
+@media only screen and (max-width: 1300px) {
+    .netflix-image{
+        height:12vw;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .netflix-image{
+        height:14vw;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .netflix-image{
+        height:16vw;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .netflix-image{
+        height:18vw;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .netflix-image{
+        height:25vw;
+        border-radius: 3px;
+    }
+}
+
+footer{
+ position:fixed;
+ bottom:0;
+}
+
+.magnify{
+    height:20px;
+    transform: translatey(6px);
+}
+
+.magnify:hover{
+    filter: grayscale(.5);
+}
+
+.bell{
+    height:24px;
+    transform: translateY(6px);
+}
+
+.avatar{
+    height:36px;
+}
+
+.ml-auto li{
+    margin-left:10px;
+}
+
+.ml-auto li:nth-of-type(5){
+    margin-left:0px;
+}
