@@ -34,8 +34,7 @@ nav{
 }
 
 .netflix-image{
-    height:8vw;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .image-div:has(>.netflix-image:hover){
@@ -110,9 +109,12 @@ h4:first-of-type{
     display:flex;
     position: relative;
     flex-direction: column;
-    margin-bottom:.5vw;
-    margin-left:1vw;
-    margin-right:.5vw;
+    width:13vw;
+    height:8vw;
+    object-fit: cover;
+    margin-bottom:6vw;
+    margin-right:2vw;
+
 }
 
 .icons{
@@ -193,35 +195,35 @@ h4:first-of-type{
 }
 
 @media only screen and (max-width: 1300px) {
-    .netflix-image{
+    .image-div{
         height:12vw;
         border-radius: 3px;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    .netflix-image{
+    .image-div{
         height:14vw;
         border-radius: 3px;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .netflix-image{
+    .image-div{
         height:16vw;
         border-radius: 3px;
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .netflix-image{
+    .image-div{
         height:18vw;
         border-radius: 3px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .netflix-image{
+    .image-div{
         height:25vw;
         border-radius: 3px;
     }
@@ -260,4 +262,16 @@ footer{
 
 .new-movie{
     margin-bottom:20px;
+}
+
+.display-movies{
+    margin-bottom: 50px;
+}
+
+.black-text{
+    color:black;
+}
+
+.edit-and-delete{
+    text-decoration: none;
 }
