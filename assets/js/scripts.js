@@ -316,8 +316,8 @@ function createBingeWorthy(){
 }
 
 window.onload = function() {
-    createTrending();
-    createWatchItAgain();
-    createNewReleases();
-    createBingeWorthy();
+    //createTrending();
+    //createWatchItAgain();
+    //createNewReleases();
+    //createBingeWorthy();
 }

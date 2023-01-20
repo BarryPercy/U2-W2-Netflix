@@ -257,3 +257,7 @@ footer{
 .ml-auto li:nth-of-type(5){
     margin-left:0px;
 }
+
+.new-movie{
+    margin-bottom:20px;
+}
